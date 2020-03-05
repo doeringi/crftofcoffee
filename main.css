@@ -8,9 +8,32 @@ body {
 }
 
 header {
-  background: #333;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #3b3b3b;
 }
 
 .title {
-  float: left;
+  color: white;
+  grid-column: 2/3;
+}
+
+nav {
+    grid-column: 3 / 4;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
 }
