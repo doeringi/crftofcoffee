@@ -19,6 +19,7 @@ header {
   justify-content: center;
   align-content: center;
   max-width: 15%;
+  height: auto;
 }
 
 nav {
