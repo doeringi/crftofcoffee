@@ -1,39 +1,119 @@
 body {
   margin: 0;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
+  padding: 0;
 }
 
 header {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  min-height: 100px;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(2, 1fr);
   background: #3b3b3b;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.title {
-  color: white;
-  grid-column: 2/3;
+#img-logo {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  max-width: 90px;
 }
 
 nav {
-    grid-column: 3 / 4;
+  display: grid;
+  justify-content: end;
+  align-content: center;
 }
 
 nav ul {
   margin: 0;
-  padding: 0;
   list-style: none;
-}
 
-nav li {
-
+  display: flex;
+  grid-gap: 20px;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.2  em;
+}
+
+
+
+
+
+
+/*section with image on the left*/
+.section-img-left {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.img-left {
+  display: grid;
+  justify-content: start;
+  align-content: center;
+
+  max-width: 100%;
+  height: auto;
+  margin: 20px;
+  padding: 2px;
+
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*section with image on the right*/
+.section-img-right {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.img-right {
+  display: grid;
+  justify-content: end;
+  align-content: center;
+
+  max-width: 100%;
+  height: auto;
+  margin: 20px;
+  padding: 2px;
+
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.text-section {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  margin: 20px;
+}
+
+/*top 3 coffee shops section starts here*/
+.section-mid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.coffeeshop-section {
+  margin: 20px;
+}
+
+.img-coffeeshop {
+  display: grid;
+  justify-content: start;
+  align-content: center;
+
+  max-width: 70%;
+  height: auto;
+}
+
+/*banner section starts here*/
+.banner {
+  display: grid;
+  grid-template-columns: 1fr;
 }
