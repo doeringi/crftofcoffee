@@ -3,6 +3,7 @@ body {
   padding: 0;
 }
 
+/*navigation bar styles start here*/
 header {
   display: grid;
   min-height: 100px;
@@ -17,7 +18,7 @@ header {
   display: grid;
   justify-content: center;
   align-content: center;
-  max-width: 90px;
+  max-width: 15%;
 }
 
 nav {
@@ -73,7 +74,7 @@ nav a {
 
 .img-right {
   display: grid;
-  justify-content: end;
+  justify-content: start;
   align-content: center;
 
   max-width: 100%;
