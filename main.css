@@ -43,7 +43,9 @@ nav ul li {
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 1.2  em;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 
@@ -71,6 +73,8 @@ nav a {
 .section-img-right {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  margin: 0;
+  padding: 0;
 }
 
 .img-right {
@@ -78,9 +82,9 @@ nav a {
   justify-content: start;
   align-content: center;
 
-  max-width: 100%;
+  max-width: 95%;
   height: auto;
-  margin: 20px;
+  margin-right: 20px;
   padding: 2px;
 
   background-color: white;
@@ -120,6 +124,8 @@ nav a {
   grid-template-columns: 1fr;
 }
 
+
+/*footer section starts here*/
 footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -129,7 +135,7 @@ footer {
 
 #footer-title {
   display: flex;
-  align-items: start;
+  align-items: center;
   /*justify-content: start;*/
   color: #ffffff;
 
@@ -137,12 +143,27 @@ footer {
 }
 
 #footer-text {
-  padding-left: 5px;
-  font-size: 15px;
+  padding-left: 7px;
+  font-size: 13px;
 
 }
 
 #footer-social-links {
   display: flex;
-  align-items: start;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.fa {
+  padding: 10px;
+  margin: 5px;
+  font-size: 30px;
+  width: 18px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+
+  background: white;
+  color: black;
 }
