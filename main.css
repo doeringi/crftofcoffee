@@ -110,7 +110,9 @@ nav ul li a:hover {
 }
 
 .coffeeshop-section {
-  margin: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0px;
 }
 
 .img-coffeeshop {
@@ -123,7 +125,7 @@ nav ul li a:hover {
 }
 
 /*banner section starts here*/
-.banner {
+#homebrewtool {
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -143,14 +145,11 @@ footer {
   /*justify-content: start;*/
   color: #ffffff;
   margin-left: 20px;
-
-
 }
 
 #footer-text {
   padding-left: 7px;
   font-size: 13px;
-
 }
 
 #footer-social-links {
