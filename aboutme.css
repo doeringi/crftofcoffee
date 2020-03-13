@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+}
+
+
+.main {
+
+}
+
+
+
+#aboutme-intro {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.title {
+  display: grid;
+  margin-left: 20px;
+  grid-column: 1;
+}
+
+#aboutme-img {
+  display: grid;
+  grid-column: 1;
+  justify-content: center;
+  align-content: center;
+
+  margin-left: 20px;
+  border-radius: 50%;
+  max-width: 50%;
+  height: auto;
+}
+
+#bio-container {
+  display: grid;
+  background-color: #f5c451;
+}
