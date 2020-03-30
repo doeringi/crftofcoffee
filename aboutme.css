@@ -11,7 +11,7 @@ body {
 
 #aboutme-intro {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 2fr 3fr/*repeat(2, 1fr)*/;
 }
 
 .title {
@@ -26,17 +26,29 @@ body {
   justify-content: center;
   align-content: center;
 
-  margin-left: 20px;
   border-radius: 50%;
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+  margin-left: 20px;
   max-width: 50%;
   height: auto;
 }
 
-#bio-container {
+#bio-shape {
   display: grid;
-  grid-column: 2;
-  background-color: #f5c451;
+
+  justify-content: center;
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-left: 210px;
+  padding: 30px;
+
+  background-color: #fcba03;
+
+  border-radius: 50% 64% 56% 74%;
 }
+
+
+
 
 #keyinterests {
     display: grid;
