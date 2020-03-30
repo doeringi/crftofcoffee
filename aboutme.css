@@ -34,5 +34,14 @@ body {
 
 #bio-container {
   display: grid;
+  grid-column: 2;
   background-color: #f5c451;
+}
+
+#keyinterests {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    justify-content: center;
+    align-content: center;
 }
