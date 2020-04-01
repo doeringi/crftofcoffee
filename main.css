@@ -64,7 +64,7 @@ nav ul li a:hover {
   justify-content: start;
   align-content: center;
 
-  max-width: 90%;
+  max-width: 80%;
   height: auto;
   margin: 20px;
   padding: 2px;
@@ -73,14 +73,29 @@ nav ul li a:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#introduction {
+#intro {
+
+}
+
+.introduction a {
+  text-decoration: underline overline;
+  font-style: italic;
+  font-size: 30px;
+  color: black !important;
+}
+
+
+.introduction-title a {
+  text-decoration: none;
   font-size: 40px;
+  color: black;
 }
 
-#introduction-text {
-  font-size: 25px;
+.introduction-text a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
 }
-
 /*section with image on the right*/
 .section-img-right {
   display: grid;
@@ -91,12 +106,12 @@ nav ul li a:hover {
 
 .img-right {
   display: grid;
-  justify-content: start;
-  align-content: center;
+  justify-content: end;
+  align-content: end;
 
-  max-width: 95%;
+  max-width: 90%;
   height: auto;
-  margin-right: 20px;
+  margin-left: 18px;
   padding: 2px;
 
   background-color: white;
@@ -129,8 +144,12 @@ nav ul li a:hover {
   justify-content: start;
   align-content: center;
 
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
+}
+
+#coffeebasics {
+  margin-left: 20px;
 }
 
 /*banner section starts here*/

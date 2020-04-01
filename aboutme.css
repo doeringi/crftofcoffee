@@ -47,13 +47,28 @@ body {
   border-radius: 50% 64% 56% 74%;
 }
 
-
-
-
 #keyinterests {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 
-    justify-content: center;
-    align-content: center;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+#interest1 {
+  color: #001f3f;
+}
+
+#interest4 {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  border: 1px;
+  border-style: solid;
+  border-color: black;
 }
