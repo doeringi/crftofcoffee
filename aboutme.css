@@ -11,7 +11,8 @@ body {
 
 #aboutme-intro {
   display: grid;
-  grid-template-columns: 2fr 3fr/*repeat(2, 1fr)*/;
+  grid-template-columns: 2fr 3fr;
+  margin-top: 10px;
 }
 
 .title {
@@ -29,13 +30,12 @@ body {
   border-radius: 50%;
   clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
   margin-left: 20px;
-  max-width: 50%;
+  max-width: 40%;
   height: auto;
 }
 
 #bio-shape {
   display: grid;
-
   justify-content: center;
   margin-top: 50px;
   margin-right: 100px;
@@ -47,28 +47,69 @@ body {
   border-radius: 50% 64% 56% 74%;
 }
 
+#welcome-message {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+
 #keyinterests {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
-  justify-content: center;
-  align-items: center;
-
-  border: 1px;
-  border-style: solid;
-  border-color: black;
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 #interest1 {
-  color: #001f3f;
+  display: grid;
+  padding: 50px;
+  margin-bottom: 0px;
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: #256b38;
+  color: #ebebeb;
+}
+
+#interest2 {
+  display: grid;
+  padding: 50px;
+  margin-bottom: 0px;
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: #001f3f;
+  color: #ebebeb;
+  }
+
+#interest3 {
+  display: grid;
+  padding: 50px;
+  margin-bottom: 0px;
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: #85144b;
+  color: #ebebeb;
 }
 
 #interest4 {
   display: grid;
   justify-content: center;
   align-content: center;
+  padding: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: #FF851B;
+  color: #ebebeb;
+}
 
-  border: 1px;
-  border-style: solid;
-  border-color: black;
+#baristacertif {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  max-width: auto;
+  height: 10%;
+
 }
