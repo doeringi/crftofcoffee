@@ -158,8 +158,19 @@ nav ul li a:hover {
 /*banner section starts here*/
 #homebrewtool {
   display: grid;
-  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
 }
+
+#brewtool {
+  display: grid;
+  width: 100%;
+  height: auto;
+
+}
+
+
 
 
 /*footer section starts here*/

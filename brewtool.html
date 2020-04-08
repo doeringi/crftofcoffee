@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CRFT OF COFFEE</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="homebrew.js"></script>
+</head>
+<body>
+<div class="container">
+  <form class="form-horizontal">
+
+    <div class="form-group">
+      <label for="select-brewmethod">What brew method do you want to use?</label>
+      <select class="form-control" name="brewmethod" id="select-brewmethod">
+        <option value="french-press">French Press</option>
+        <option value="chemex">Chemex</option>
+        <option value="v60">V60</option>
+      </select>
+
+      <label for="<coffeeSize">How much coffee do you want to brew?</label>
+      <input type="text" class="form-control" id="coffeeSize">
+    </div>
+      <button type="button" class="btn btn-primary btn-block" id="hello-world">Submit</button>
+
+  </form>
+
+  <p id="solution"></p>
+</div>
+
+</body>
+
+</html>
