@@ -163,6 +163,12 @@ nav ul li a:hover {
   padding: 20px;
 }
 
+#homebrew-heading {
+  display: grid;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
 #brewtool {
   display: grid;
   width: 100%;

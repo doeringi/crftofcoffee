@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
 
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -15,12 +14,19 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!--jQuery Validate Plug-In-->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"></script>
+
+  <!-- Custom JavaScript -->
   <script type="text/javascript" src="homebrew.js"></script>
 </head>
 <body>
 <div class="container">
-  <form class="form-horizontal">
+  <form class="registerForm" id="brewtoolform" novalidate>
 
     <div class="form-group">
       <label for="select-brewmethod">What brew method do you want to use?</label>
@@ -31,17 +37,17 @@
       </select>
 
       <label for="<coffeeSize">How much coffee do you want to brew?</label>
-      <input type="text" class="form-control" id="coffeeSize">
+      <input type="text" name="coffeeSize" class="form-control" id="coffeeSize" placeholder="amount in ml">
     </div>
-      <button type="button" class="btn btn-primary btn-block" id="hello-world">Submit</button>
+      <button type="button" class="btn btn-primary btn-block" id="submit">Submit</button>
 
 
 
   </form>
   <div id="recipe">
 
-    <h3>Your brew recipe for <h3 id="show-brewmethod"></h3></h3>
-    <table>
+    <h3 id="show-brewmethod"></h3>
+    <table class="table">
       <tr>
           <th>Amount of coffee</th>
           <th>Grind size</th>
@@ -50,13 +56,14 @@
           <th>Brewing time</th>
       </tr>
       <tr>
-        <td><p id="solution"></p></td>
-        <td><p id="grSize"></p></td>
-        <td><p id="wateramount"></p></td>
-        <td><p id="watertemp"></p></td>
-        <td><p id="brewtime"></p></td>
+        <td><p class="brewdescription"></p></td>
+        <td><p class="brewdescription"></p></td>
+        <td><p class="brewdescription"></p></td>
+        <td><p class="brewdescription"></p></td>
+        <td><p class="brewdescription"></p></td>
       </tr>
     </table>
+
   </div>
 
 </div>
