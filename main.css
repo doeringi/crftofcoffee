@@ -1,6 +1,7 @@
 
 
-body {
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -150,6 +151,22 @@ nav ul li a:hover {
   max-width: 100%;
   height: auto;
 }
+
+#mapGrid {
+  display: grid;
+  height: 50vh;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  /*position: absolute;*/
+}
+
+#map {
+  display: flex;
+  /*position: relative;*/
+}
+
 
 #coffeebasics {
   margin-left: 20px;

@@ -64,13 +64,10 @@ $(document).ready(function() {
 
 function drawRecipe() {
 
-
     var brewmethod =  $("#select-brewmethod").val();
     var grSize = ["fine", "medium", "medium-coarse", "coarse"];
     var waterTemp = ["94 Degree Celsius", "96 Degree Celsius", "97 Degree Celsius"];
     var brewTime = ["3 min", "4 min", "5 min"];
-
-
 
     $("#recipe").show();
 
